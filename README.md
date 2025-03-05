@@ -1,2 +1,2 @@
 # basit-site-js
-basit site
+dosyayı indirip master.html i çalıştırın.
