@@ -1,0 +1,115 @@
+<html>
+    <head>
+<title>Ahmet kaya</title>
+    </head>
+    <body>
+        
+<div class="content">
+        <h1>
+            Ahmet Kaya
+        </h1>
+        
+        <p class="paragraf">
+        Doğum tarihi: 29/03/2004 Vatandaşlik: T.C. Telefon numarasi: (+90) 5382753262 Email adresi: ahmetkaya14321@gmail.com 
+         
+        </p>
+    <h2>Hakkimda</h2>
+        <p id="p1" class="paragraf">Bilgisayar mühendisliği alaninda öğrenmeye ve yeniliklere açik biriyim. Nesneye yönelik programlama, veri tabani
+            yönetim sistemleri ve uygulama geliştirme konularinda derinlemesine bilgi sahibi olmak için sürekli olarak kendimi
+            geliştiriyorum. Analitik düşünme becerim ve problem çözme yeteneğim ile teknik zorluklari aşmak için yaratici
+            çözümler üretmekten keyif aliyorum. Amacim, teknolojiye olan tutkumla sektöre değer katmak ve etkili çözümler
+            sunmaktir.
+        </p>
+    <h2>Dijital beceriler</h2>
+        <p id="p2" class="paragraf">
+        Java, C ,Python,JavaScript,react, MS SQL,  Oracle,Nesneye yönelik programlama
+        </p>
+    <h2>Dil becerileri</h2>
+        <p id="p3" class="paragraf">
+        Türkçe ,İngilizce(B2)
+        </p>
+    <h2>Eğitim Ve Staj  </h2>
+        <p id="p4" class="paragraf">23/08/2022 Edirne, Türkiye
+        BİLGİSAYAR MÜHENDİSLİĞİ LİSANS ÖĞRENCİSİ TRAKYA ÜNİVERSİTESİ
+        </p>
+        <a
+         href="https://www.trakya.edu.tr/" target="_blank"> İnternet sitesi https://www.trakya.edu.tr/
+        </a>
+        <p id="p5" class="paragraf">  
+        05/08/2024  02/09/2024 İstanbul, Türkiye
+        BİLGİ SİSTEMLER STAJYERİ FUJIFILM DIS TICARET A.S.
+        
+        </p>
+        <a href="https://www.fujilm.com/tr/tr" target="_blank">İnternet sitesi https://www.fujilm.com/tr/tr
+
+        </a>
+    </div>
+
+     <style>
+          
+          body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            height: 100vh;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/cc/Kepler-452b_artist_concept_-_animated_GIF.gif'); /* GIF URL'si */
+            background-size: cover; /* Görselin boyutunun ekrana uyumlu olmasını sağlar */
+            background-position: center; /* Arka planın ortalanmasını sağlar */
+            background-attachment: fixed; /* Arka planın sabitlenmesini sağlar */
+            overflow: hidden; /* Ekranı kaydırmak istemediğimiz için overflow'ü gizliyoruz */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative; /* İçerik için yer ayırır */
+        }
+        .content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Koyu bir arka plan ekleyerek yazıları belirginleştiririz */
+            z-index: -1;
+        }
+
+        /* Arka plandaki video */
+        
+        
+    
+        /* Başlangıçta paragraflar gizli olacak */
+        .paragraf {
+            
+            opacity: 0;
+            transform: translateY(20px); /* Yukarıdan gelirken daha doğal görünür */
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        /* Paragrafların animasyonla açılmasını sağlıyoruz */
+        .open { 
+            opacity: 1;
+            transform: translateY(0);}
+        .content{ z-index: 1; /* İçeriği üstte gösterecek */
+            color: white; /* Yazı rengi */
+            position: relative;
+
+        }
+     </style>
+         
+    </body>
+    <script>
+        window.onload=function(){
+          const paragraf=  document.querySelectorAll(".paragraf");
+            paragraf.forEach((paragraf, index) => {
+                
+                setTimeout(() => {
+                    paragraf.classList.add('open');
+                }, index * 500); 
+            });
+        };
+        
+  
+  
+    
+    </script>
+</html>
